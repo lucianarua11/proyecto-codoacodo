@@ -4,102 +4,156 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto2</title>
+    <title>Proyecto2Boost</title>
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon_package_v0.16 (2)/favicon.ico">
+    <!-- Bootstrap CSS -->
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos2.css">
+
 </head>
 <body>
-    <header class="header">
-        <div class="headerNav">
-            <div class="contenedorLogo">
-                <a href="https://inscripcionesagencia.bue.edu.ar/codoacodo/" target="_blank"><img src="./assets/img/codoacodo1.png" alt="Logo Codo a Codo"></a>
-                <h2>Conf. Bs. As.</h2>
+    <header class="header h-100">
+        <nav class="navbar navbar-expand-lg navbar-dark ColorNav">
+            <div class="container">
+                <a class="navbar-brand" href="https://inscripcionesagencia.bue.edu.ar/codoacodo/">
+                    <img src="./assets/img/codoacodo1.png" alt="Logo Codo a Codo" width="100px" 
+                    class="d-inline-block align-text-top">
+                    Conf. Bs. As.
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav w-100 justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="laConferencia">La Conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="losOradores">Los Oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="lugarYfecha">Lugar y la Fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="convierteteEnOrador">Conviertete en Orador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link colorVerde" href="./pages/comprar_tickets.html" target="_blank">Comprar tickets</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+
         
-            <nav class="navegacion">
-                <ul class="listaNav">
-                    <li><a class="linkNav1" href="laConferencia">La Conferencia</a></li>
-                    <li><a class="linkNav" href="losOradores">Los Oradores</a></li>
-                    <li><a class="linkNav" href="lugarYfecha">Lugar y la Fecha</a></li>
-                    <li><a class="linkNav" href="convierteteEnOrador">Conviertete en Orador</a></li>
-                    <li><a class="linkNav5" href="./pages/comprar_tickets.html" target="_blank">Comprar tickets</a></li>
-                </ul>
-            </nav>
-        </div>
-        <section id="laConferencia" class="laConferencia">
-            <div class="textoConferencia">
-                <h1 class="tituloParrafo">Conf Bs. As.</h1>
-                <p class="parrafoConferencia">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Coco a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-                <br>
-                <a href="#convierteteEnOrador" class="Conviertete">Quiero ser Orador</a>
-                <a href="./pages/comprar_tickets.html" class="tickets" target="_blank">Comprar tickets</a>
-            </div>
+        <section id="laConferencia" class="container-fluid h-80 p-0">
+            
+            <div id="carouselExampleSlidesOnly" class="carousel-slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/ba1.jpg" class="foto d-flex w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="tituloParrafo">Conf Bs. As.</h1>
+                            <br>
+                            <p class="parrafoConferencia">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Coco a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+                            <a href="#convierteteEnOrador" class="Conviertete">Quiero ser Orador</a>
+                            <a href="./pages/comprar_tickets.html" class="tickets" target="_blank">Comprar tickets</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/ba2.jpg" class="foto d-flex w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="tituloParrafo">Conf Bs. As.</h1>
+                            <br>
+                            <p class="parrafoConferencia">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Coco a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+                            <a href="#convierteteEnOrador" class="Conviertete">Quiero ser Orador</a>
+                            <a href="./pages/comprar_tickets.html" class="tickets" target="_blank">Comprar tickets</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/ba3.jpg" class="foto d-flex w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="tituloParrafo">Conf Bs. As.</h1>
+                            <br>
+                            <p class="parrafoConferencia">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Coco a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+                            <a href="#convierteteEnOrador" class="Conviertete">Quiero ser Orador</a>
+                            <a href="./pages/comprar_tickets.html" class="tickets" target="_blank">Comprar tickets</a>
+                        </div>
+                    </div>
+                </div>    
+            </div>            
         </section>
     </header>
 
+
+
     <main>
-        <section id="losOradores" class="sectionOradores">
+        <section id="losOradores" class="container mb-4">
             <h2 class="tituloRadores"><span style="font-size:80%; font-weight: lighter;"><small> CONOCE A LOS</small></span><br><big style="font-size:160%;">ORADORES</big></h2>
             
-            <div class="padreCards">
-                <div class="flex-container">
-                    <div class="card" id="cardUno">
+            <div class="row" >
+                <div class="col-sm-12 col-md-4">
+                    <div class="card">
                         <img src="./assets/img/steve2.jpg" alt="Steve Jobs">
-                        <div class="cardBody">
-                            <div class="colores">
-                                <h4 class="tituloJava">JavaScript</h4>
-                                <h4 class="tituloReact">React</h4>
-                            </div>
-                            <h2 class="nombreCard">Steve Jobs</h2>
-                            <p class="infoCard">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quaerat accusantium excepturi velit fuga iure nostrum delectus aspernatur corporis. Officia unde atque incidunt magnam qui ipsum obcaecati eligendi repellendus porro.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="./assets/img/bill.jpg" alt="Bill Gates">
-                        <div class="cardBody">
-                            <div class="colores">
-                                <h4 class="tituloJava">JavaScript</h4>
-                                <h4 class="tituloReact">React</h4>
-                            </div>
-                            <h2 class="nombreCard">Bill Gates</h2>
-                            <p class="infoCard">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quaerat accusantium excepturi velit fuga iure nostrum delectus aspernatur corporis. Officia unde atque incidunt magnam qui ipsum obcaecati eligendi repellendus porro.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="./assets/img/ada.jpeg" alt="Ada Lovelace">
-                        <div class="cardBody">
-                            <div class="colores2">
-                                <h4 class="tituloNegocios">Negocios</h4>
-                                <h4 class="tituloStartups">Startups</h4>
-                            </div>
-                            <h2 class="nombreCard">Ada Lovelace</h2>
-                            <p class="infoCard">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quaerat accusantium excepturi velit fuga iure nostrum delectus aspernatur corporis. Officia unde atque incidunt magnam qui ipsum obcaecati eligendi repellendus porro.</p>
+                        <div class="card-body">
+                            <a href="#" class="tituloJava">JavaScript</a>
+                            <a href="#" class="tituloReact">React</a>
+                            <h5 class="nombreCard pt-2">Steve Jobs</h5>
+                            <p class="card-text">Steven Jobs ​​​​fue un empresario, diseñador industrial, magnate empresarial, propietario de medios e inversor estadounidense. Fue cofundador y presidente ejecutivo de Apple​ y máximo accionista individual de The Walt Disney Company.​</p>
                         </div>
                     </div>
                 </div>
-            </div>           
-            
+                <div class="col-sm-12 col-md-4">
+                    <div class="card" >
+                        <img src="./assets/img/bill.jpg" alt="Bill Gates">
+                        <div class="card-body" style="height: max-content;">
+                            <a href="#" class="tituloJava">JavaScript</a>
+                            <a href="#" class="tituloReact">React</a>
+                            <h5 class="nombreCard pt-2">Bill Gates</h5>
+                            <p class="card-text">Bill Gates es un magnate empresarial, desarrollador de software, inversor, autor y filántropo estadounidense. Es cofundador de Microsoft, junto con su difunto amigo de la infancia Paul Allen.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="card">
+                        <img src="./assets/img/ada.jpeg" alt="Ada Lovelace">
+                        <div class="card-body">
+                            <a href="#" class="tituloNegocios">Negocios</a>
+                            <a href="#" class="tituloStartups">Startups</a>
+                            <h5 class="nombreCard pt-2">Ada Lovelace</h5>
+                            <p class="card-text">Ada Lovelace, fue la primera en reconocer que la máquina tenía aplicaciones más allá del cálculo puro y en haber publicado lo que se reconoce hoy como el primer algoritmo destinado a ser procesado por una máquina, por lo que se la considera como la primera programadora de ordenadores.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         
-        <section id="lugarYfecha" class="lugarFecha">
-            <div class="left">
-            </div>
-            <div class="right">
-                <h2 class="tituloLugar">Bs As - Octubre</h2>
-                <p class="info">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600km2 de superficie).</p>
-                <a class="ConoceMas" href="./pages/Honolulu.html">Conoce mas</a>
-            </div>
-            
+        <section id="lugarYfecha" class="container-fliud">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 columnaIzq">
+                </div>
+                <div class="col-sm-12 col-md-6 columnaDer">
+                    <h2 class="tituloLugar">Bs As - Octubre</h2>
+                    <p class="info">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600km2 de superficie).</p>
+                    <a class="ConoceMas" href="./pages/Honolulu.html">Conoce mas</a>
+                </div>
+            </div>    
         </section>
         
-        <section id="convierteteEnOrador" class="convierteteEnOrador">
+        <section id="convierteteEnOrador" class="container">
             <h2 class="tituloForm"><span style="font-size:80%; font-weight: lighter;"><small>CONVIÉRTETE EN UN</small></span><br> <big style="font-size:200%;">ORADOR</big></h2>
             <p class="parrafoForm">Anótate como orador para dar una <abbr class="puntitos"> charla ignite</abbr>. Cuéntanos de qué quieres hablar!</p>
-            <form action="" autocomplete="on">
-                <div class="contenedorForm">
-                    <div class="datos">
-                        <input type="text" name="nombre" placeholder="Nombre" required class="input1" >
-                        <input type="text" name="apellido" placeholder="Apellido" required class="input2" > 
+            <form>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 pb-3">
+                        <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                    </div>
+                    <div class="col-sm-12 col-md-6 pb-3">
+                        <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
                     </div>
                     <div>
                         <textarea name="" id="" cols="44" rows="6" required>Sobre que quieres hablar?</textarea>
@@ -110,20 +164,23 @@
                     </div>
                 </div>
             </form>
-        </section>
-    </main>
+        
+        </section>    
 
-    <footer class="footer">
-        <div class="contenedorFooter">
-            <a class="reFooter" href="#">Preguntas <br> frecuentes</a>
-            <a class="reFooter" href="#">Contactanos</a>
-            <a class="reFooter" href="#">Prensa</a>
-            <a class="reFooter" href="#">Conferencias</a>
-            <a class="reFooter" href="#">Terminos y <br> condiciones</a>
-            <a class="reFooter" href="#">Privacidad</a>
-            <a class="reFooter" href="#">Estudiantes</a>
+    <footer class="footer cantainer-fluid mt-3">
+        <div class="contenedorFooter row text-center gap-3">
+            <a class="col-sm-12 col-md-2" href="#">Preguntas frecuentes</a>
+            <a class="col-sm-12 col-md-2" href="#">Contactanos</a>
+            <a class="col-sm-12 col-md-1" href="#">Prensa</a>
+            <a class="col-sm-12 col-md-2" href="#">Conferencias</a>
+            <a class="col-sm-12 col-md-2" href="#">Terminos y condiciones</a>
+            <a class="col-sm-12 col-md-1" href="#">Privacidad</a>
+            <a class="col-sm-12 col-md-1" href="#">Estudiantes</a>
         </div>
     </footer>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -12,7 +12,6 @@
 }
 
 body{
-    font-family: 'Noto Sans', cursive;
     font-family: 'Noto Sans', sans-serif;
     
 }
@@ -25,102 +24,31 @@ h1,h2,h3,h4,h5,h6{
 .header{
     height: 100vh;
 }
-
-.headerNav{
+.ColorNav{
     background-color: rgb(53, 58, 64);
-    height: 12%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1rem 5rem;
     
 }
-.contenedorLogo{
-    display:flex;
-    width: 20%;
-    align-items: center;
-    justify-content: flex-start;
-}
-.contenedorLogo a{
-    display: inline-block;
-    width: 40%;
-}
-.contenedorLogo img{
-    width: 95%;
-    object-fit: cover;
-}
-.contenedorLogo h2{
-    color: white;
-    font-weight: 300;
-}
-.navegacion{
-    display:flex;
-    width: 55%;
-    align-items: center;
-    justify-content: center;
-
-}
-.listaNav{
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.linkNav{
-    text-decoration: none;
-    color:rgb(215, 210, 210);
-    font-size:1.1rem;
-    
-    /*padding-left:1rem;*/
-}
-.linkNav1{
-    color: white;
-    font-size:1.1rem;
-    text-decoration: none;
-}
-
-.linkNav5{
+.navbar-nav .nav-item .colorVerde{
     color: green;
-    font-size:1.2rem;
     text-decoration: none;
-}
-
-
-
-
-.laConferencia{
-    height: 85%;
-    background: linear-gradient(to bottom, #00000026, #000000c2,#00000026), url("../assets/img/ba1.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding-right: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
     
 }
-.textoConferencia{
-    width: 40%;
+
+.carousel-inner .carousel-item .carousel-caption .parrafoConferencia{
     color:white;
     text-align: right;
-    flex-direction: column;
-    justify-content:space-between;
-}
-
-.tituloParrafo {
-    font-size: 2rem;
-}
-
-.parrafoConferencia{
-    font-weight: 700;
     line-height: 2;
-    font-size: 30px;/*los px son unidades de medidas absolutas, que son fijos*/
-    font-size:1rem; /*1rem = 16px fuente recomendada, fuente grande 1rem = 20px, fuente muy pequeña 1rem =9px. el rem es una unidad relativa, relativa al tamaño de fuente que tiene configurado el html, quien lo configura, el user en primera instancia, y nosotros desde el css*/
+    font-size:1rem; 
     font-weight: 300;
+
 }
-.Conviertete{
+.carousel-inner .carousel-item .carousel-caption .tituloParrafo{
+    color:white;
+    text-align: right;
+    font-size: 2rem;
+
+}
+.carousel-inner .carousel-item .carousel-caption .Conviertete{
     color: white;
     border: 1px solid #e7e8ea;
     padding: 10px;
@@ -128,58 +56,21 @@ h1,h2,h3,h4,h5,h6{
     border-radius: 4px;
     margin-right: 10px;
 }
-.tickets{
+.carousel-inner .carousel-item .carousel-caption .tickets{
     color: white;
     padding: 10px;
     background-color: green;
     text-decoration: none;
     border-radius: 4px;
-    
 }
 
-
-.sectionOradores{
-    height: 85vh;
-    margin-bottom: 3rem;
+.container{
+    height: initial;
 }
+
 .tituloRadores{
     text-align: center;
 
-}
-
-
-.padreCards{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height:100%;
-    width: 75%;
-    margin:0 auto;
-    text-align: center;
-    padding-bottom: 1.5rem;
-    flex-wrap: wrap;
-    column-gap: 4%;
-}
-
-
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    padding-top: 0.5rem;
-    padding-bottom: 1.5rem;
-    height: 100%;
-}
-.card{
-    height:100%;
-    width: 30%;
-    border: 1px solid rgb(204, 203, 203);
-    margin-left:15px;
-    border-radius: 5px;
-    text-align: left;
-    border-radius: 2%;
-    
 }
 .card img{
     height:55%;
@@ -188,15 +79,11 @@ h1,h2,h3,h4,h5,h6{
     border-radius: 2% 2% 0px 0px;
     
 }
-.cardBody{
-    width: 100%;
-    padding:10px;
-    padding-top: 1rem;
-}
-.colores{
-    display: inline-block;
+.card{
+    border-radius: 2%;
     
 }
+
 .tituloJava{
     font-size: small;
     display:inline-block;
@@ -233,53 +120,29 @@ h1,h2,h3,h4,h5,h6{
     text-decoration: none;
     border-radius: 4px;
 }
-.nombreCard{
-    padding-bottom: 1rem;
-}
-.infoCard{
-    line-height: 1.2;
-}
 
 
-.lugarFecha{
-    display: flex;
-    height: 60vh;
-    position:relative;
-    
-    
-}
-.left{
-    width: 50%;
-    height: 100%;
-    display: inline;
-    border:1px solid white;
+.columnaIzq{
     background-image: url("../assets/img/honolulu.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position:absolute;
-    top:0;
-    left:0;
+    height: 60vh;
 }
-.right{
-    display: inline;
-    width: 50%;
-    height: 100%;
+.columnaDer{
     background-color: rgb(70, 65, 65);
     color:white;
-    position:absolute;
-    top:0;
-    right:0;
-    padding: 1rem;
+    height: 60vh;
 }
+
+
 .tituloLugar {
     font-size: 2rem;
 }
 .info{
     font-weight: 700;
     line-height: 2;
-    font-size: 30px;/*los px son unidades de medidas absolutas, que son fijos*/
-    font-size:1rem; /*1rem = 16px fuente recomendada, fuente grande 1rem = 20px, fuente muy pequeña 1rem =9px. el rem es una unidad relativa, relativa al tamaño de fuente que tiene configurado el html, quien lo configura, el user en primera instancia, y nosotros desde el css*/
+    font-size:1rem; 
     font-weight: 300;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -289,10 +152,8 @@ h1,h2,h3,h4,h5,h6{
     border: 1px solid #e7e8ea;
     padding: 8px;
     text-decoration: none;
-    border-radius: 4px;
-    
+    border-radius: 4px;    
 }
-
 
 
 .convierteteEnOrador{
@@ -317,40 +178,7 @@ h1,h2,h3,h4,h5,h6{
 .puntitos{
     text-decoration: underline dotted;
 }
-.contenedorForm{
-    width: 100%;
-    text-align: center;
-}
-.colores{
-    display: inline-block;
-    
-}
-.datos{
-    display: flex;
-    padding-bottom: 1rem;
-}
-.datos input{
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    
-    flex-wrap: nowrap;
-    width: 100%;
-    justify-content: space-between;
-    /*outline: none;*/
-    
-    
-}
-.input{
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
-.input1{
-    margin-right: 10px;
-}
-.input2{
-    margin-left: 10px;
-}
+
 textarea {
     width: 100%;
     height: 150px;
@@ -363,10 +191,9 @@ textarea {
     font-size: 1rem;
 }
 .recorda{
-    width: 100%;
     text-align: left;
-    padding-bottom: 1rem;
     font-size: 0.8rem;
+    margin-bottom: 0;
 }
 .formSubmit{
     width: 100%;
@@ -379,35 +206,25 @@ textarea {
     background-color: rgb(105, 199, 105);
     border-radius: 4px;
     font-weight: bold;
-    font-size: 1rem;    
+    font-size: 1rem;  
+    margin-bottom: 0;
 }
-
-
-
 
 .footer{
     background:linear-gradient( to right, #1d3947,#1d4962, #1e5372);
     flex-wrap: wrap;
-}
-.contenedorFooter{
-    width: 65%;
-    margin: auto;
-    /*height: 10vh;*/
-    font-size: 1rem;
-    padding-top: 1rem;
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
+    height: initial;
+    padding: 30px;
     
 }
-.reFooter{
+.contenedorFooter a {
     color: white;
     font-size:1.1rem;
     text-decoration: none;
-    
 }
 
-/*************************************************************/
+
+/*****************************
 
 @media screen and (max-width: 567px) {
     .headerNav{
@@ -479,7 +296,7 @@ textarea {
     }
     
     .right{
-        /*display: inline-block;*/
+        
         width: 100%;
         height: 100%;
         background: linear-gradient(to bottom, #00000026, #000000c2,#00000026),url("../assets/img/honolulu\ mobile.jpg");
@@ -523,7 +340,7 @@ textarea {
 }
 
 
-/*************************************************************/
+/*****************************************************
 
 @media screen and (min-width: 568px) and (max-width: 767px) {
     
@@ -649,7 +466,7 @@ textarea {
 
 }
 
-/*************************************************************/
+/**********************************************
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     
@@ -733,7 +550,7 @@ textarea {
     }
 }
 
-/*************************************************************/
+/***********************************************************
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     
@@ -784,7 +601,7 @@ textarea {
 
 }
 
-/*************************************************************/
+/************************************************************
 
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
     
@@ -833,3 +650,4 @@ textarea {
         height: initial;
     }
 }
+********************************/
