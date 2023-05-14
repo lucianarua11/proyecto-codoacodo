@@ -388,6 +388,7 @@ textarea {
 .footer{
     background:linear-gradient( to right, #1d3947,#1d4962, #1e5372);
     flex-wrap: wrap;
+    margin-top: 1rem;
 }
 .contenedorFooter{
     width: 65%;
@@ -404,6 +405,7 @@ textarea {
     color: white;
     font-size:1.1rem;
     text-decoration: none;
+    text-align: center;
     
 }
 
@@ -515,6 +517,9 @@ textarea {
         align-items: center;
         padding-bottom: 1rem;
         justify-content: center;
+        flex-direction: column;
+        padding: 1rem;
+        margin-top: 2rem;
     }
     .reFooter{
         padding: 5px;
