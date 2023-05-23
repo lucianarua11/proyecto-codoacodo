@@ -117,7 +117,6 @@ h1,h2,h3,h4,h5,h6{
 .parrafoConferencia{
     font-weight: 700;
     line-height: 2;
-    font-size: 30px;/*los px son unidades de medidas absolutas, que son fijos*/
     font-size:1rem; /*1rem = 16px fuente recomendada, fuente grande 1rem = 20px, fuente muy pequeña 1rem =9px. el rem es una unidad relativa, relativa al tamaño de fuente que tiene configurado el html, quien lo configura, el user en primera instancia, y nosotros desde el css*/
     font-weight: 300;
 }
@@ -142,6 +141,7 @@ h1,h2,h3,h4,h5,h6{
 .sectionOradores{
     height: 85vh;
     margin-bottom: 3rem;
+    
 }
 .tituloRadores{
     text-align: center;
@@ -456,19 +456,31 @@ textarea {
     .sectionOradores{
         height: auto;
         padding-top: 10px;
-        
+        margin: 0%;
     }
+
     .padreCards{
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: flex-start;
-        flex-wrap: wrap;
+        
         padding-bottom: 5px;
+        
         
     }
     .flex-container{
         justify-content: center;
+        
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+    .card{
+        width: 90%;
+        margin: 0%;
+        margin-top: 0.5rem;
     }
     
     .lugarFecha{
@@ -480,7 +492,7 @@ textarea {
     }
     
     .right{
-        /*display: inline-block;*/
+        
         width: 100%;
         height: 100%;
         background: linear-gradient(to bottom, #00000026, #000000c2,#00000026),url("../assets/img/honolulu\ mobile.jpg");
@@ -501,7 +513,6 @@ textarea {
         padding-top: 1rem;
         height: auto;
         width: 100%;
-        margin-bottom: 3rem;
         padding: 10px 10px;
     }
     .formularioOrador{
@@ -649,130 +660,7 @@ textarea {
     }
 
 }
-/*************************************************************/
-@media (orientation: landscape) and (min-width: 568px) and (max-width: 767px) {
-    
-    .headerNav{
-        background-color: rgb(53, 58, 64);
-        align-content: center;
-        justify-content: center;
-        height: initial;
-        flex-wrap: wrap;
-        align-items: row;
-        padding: 1rem 0.5rem;
-        width: 100%;
-        display: inline-flex;
-    }
-    .contenedorLogo{
-        width: 50%;
-        align-items: center;
-        justify-content: center;
-    }
-    .contenedorLogo a{
-        width: 30%;
-    }
-    .navegacion{
-        width: 50%;
-    }
-    .listaNav{
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: end;
-        width: 100%;
-        padding-right: 1rem;
-    }
 
-
-    .laConferencia{
-        height: 65%;
-        width: 100%;
-        background:url("../assets/img/ba1\ mobile.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        padding-right:initial;
-        align-items: center;
-        justify-content:center;
-        display: block;
-    }
-    .textoConferencia{
-        background:linear-gradient(to bottom, #00000025, #000000c2,#00000025);
-        width: 100%;
-        text-align: center;
-        
-        
-    }
-
-    .losOradores{
-        height: auto;
-    }
-    .tituloRadores{
-        padding-top: 1rem;
-    }
-    .sectionOradores{
-        height: auto;
-    }
-    .padreCards{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        padding-bottom: 5px;
-        
-    }
-    .flex-container{
-        justify-content: center;
-    }
-    
-
-    .lugarFecha{
-        
-        height: 65vh;
-        width: 100%;
-        position:relative;
-        align-items: center;
-        
-    }
-    /*
-    .right{
-        
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to bottom, #00000026, #000000c2,#00000026),url("../assets/img/honolulu\ mobile.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        color:white;
-        position:absolute;
-    }
-
-    /*
-    .convierteteEnOrador{
-        padding-top: 1rem;
-        height: auto;
-        width: 100%;
-        margin-bottom: 3rem;
-        padding: 10px 10px;
-    }
-    .formularioOrador{
-        width: 100%;
-        height: initial;
-    }
-
-    
-    .contenedorFooter{
-        flex-wrap: wrap;
-        width: 100%;
-        align-items: center;
-        padding-bottom: 1rem;
-        justify-content: center;
-    }
-    .reFooter{
-        padding: 5px;
-    }*/
-
-}
 /*************************************************************/
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -931,6 +819,7 @@ textarea {
         height: 100%;
         padding-top: 0.5rem;
         
+        
     }
     .padreCards{
         width: 100%;
@@ -938,11 +827,16 @@ textarea {
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
-        padding-bottom: 5px;
+        /*padding-bottom: 5px;*/
         
     }
     .flex-container{
         justify-content: center;
+        
+    }
+    .card{
+        
+        height: 100%;
     }
 
     .convierteteEnOrador{
